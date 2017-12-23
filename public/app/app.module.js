@@ -1,4 +1,4 @@
 'use strict';
 (function(){
-	angular.module('App',[]);
+	angular.module('app',[]);
 })();
