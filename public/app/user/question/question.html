@@ -1,0 +1,72 @@
+<div class="md-padding dialogdemoBasicUsage" id="popupContainer" ng-cloak="" >
+    <form>
+        <div class="dialog-demo-content" layout="row" layout-wrap="" layout-margin="" layout-align="center">
+            <md-input-container class="md-block">
+                <!-- Use floating label instead of placeholder -->
+                <label>问题标题</label>
+                <input required ng-model="answerTitle" type="text" >
+            </md-input-container>
+            <md-button class="md-primary md-raised" ng-click="showAdvanced($event)">
+                选择咨询师
+            </md-button>
+        </div>
+        <div class="dialog-demo-prerendered" layout="column" layout-align="center center" >
+            <div layout="row" layout-align="center center">
+                <md-textarea-container class="md-block">
+                    <textarea required ng-model="answerDesc" type="text" style="width:500px;height:400px;" placeholder="问题描述..."></textarea>
+                </md-textarea-container>
+            </div>
+            <div layout="row" layout-align="center center">
+                <md-button ng-click="submitAnswer()" class="md-raised" type="submit" id="loginBtn"> 提交
+                </md-button>
+                <md-button ng-click="saveAnswer()" class="md-raised">保存</md-button>
+            </div>
+
+        </div>
+
+        <script type="text/ng-template" id="dialog1.tmpl.html">
+            <md-dialog aria-label="Mango (Fruit)">
+                <!--<form ng-cloak>-->
+                <md-toolbar>
+                    <div class="md-toolbar-tools">
+                        <h2>Mango (Fruit)</h2>
+                        <span flex></span>
+                        <md-button class="md-icon-button" ng-click="cancel()">
+                            <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+                        </md-button>
+                    </div>
+                </md-toolbar>
+
+                <md-dialog-content>
+                    <div class="md-dialog-content">
+                        <h2>Using </h2>
+                        <p>
+                            The
+                        </p>
+
+                        <img style="margin: auto; max-width: 100%;" alt="Lush mango tree" src="img/mangues.jpg">
+
+                        <p>
+                            The highest
+                        </p>
+                        <p>
+                            It originated
+                        </p>
+                    </div>
+                </md-dialog-content>
+
+                <md-dialog-actions layout="row">
+                    <span flex></span>
+                    <md-button ng-click="answer('not useful')">
+                        Not Useful
+                    </md-button>
+                    <md-button ng-click="answer('useful')">
+                        Useful
+                    </md-button>
+                </md-dialog-actions>
+                <!--</form>-->
+            </md-dialog>
+        </script>
+    </form>
+</div>
+

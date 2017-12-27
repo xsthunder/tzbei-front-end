@@ -1,7 +1,7 @@
 (function () {
     angular.module('app')
-        .component('xxLogin', {
-            templateUrl: '/app/login/login.html',
+        .component('xxQuestion', {
+            templateUrl: '/app/user/question/question.html',
             controller: ctrl
         });
 
