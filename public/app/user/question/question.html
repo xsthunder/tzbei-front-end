@@ -3,7 +3,7 @@
         <div class="dialog-demo-content" layout="row" layout-wrap="" layout-margin="" layout-align="center">
             <md-input-container class="md-block">
                 <!-- Use floating label instead of placeholder -->
-                <label>问题标题</label>
+                <label>问题标题{{user.age}}</label>
                 <input required ng-model="answerTitle" type="text" >
             </md-input-container>
             <md-button class="md-primary md-raised" ng-click="showAdvanced($event)">
@@ -29,7 +29,7 @@
                 <!--<form ng-cloak>-->
                 <md-toolbar>
                     <div class="md-toolbar-tools">
-                        <h2>Mango (Fruit)</h2>
+                        <h2>选择咨询师</h2>
                         <span flex></span>
                         <md-button class="md-icon-button" ng-click="cancel()">
                             <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
@@ -40,12 +40,7 @@
                 <md-dialog-content>
                     <div class="md-dialog-content">
                         <h2>Using </h2>
-                        <p>
-                            The
-                        </p>
-
                         <img style="margin: auto; max-width: 100%;" alt="Lush mango tree" src="img/mangues.jpg">
-
                         <p>
                             The highest
                         </p>
@@ -58,10 +53,10 @@
                 <md-dialog-actions layout="row">
                     <span flex></span>
                     <md-button ng-click="answer('not useful')">
-                        Not Useful
+                        换一批
                     </md-button>
                     <md-button ng-click="answer('useful')">
-                        Useful
+                        选择
                     </md-button>
                 </md-dialog-actions>
                 <!--</form>-->

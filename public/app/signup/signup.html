@@ -1,0 +1,66 @@
+<md-toolbar>
+    <div class="md-toolbar-tools">
+        <md-truncate >QuestionAnswer</md-truncate>
+        <span flex=""></span>
+        <md-button ng-href="{{homeUrl}}" target="_blank">HOME</md-button>
+    </div>
+</md-toolbar>
+
+<md-content>
+    <div layout="column" layout-align="center center">
+        <h1>问我吧！</h1>
+        <i>description here...</i>
+
+<md-content layout-fill>
+    <md-content layout-padding layout="column" layout-align="space-between center">
+        <div layout="column">
+            <div layout-gt-xs="row">
+                <md-input-container>
+                    <label>用户名</label>
+                    <input ng-model="user.userName" required>
+                </md-input-container>
+                <md-input-container>
+                    <label>密码</label>
+                    <input ng-model="user.password" type="password" required>
+                </md-input-container>
+            </div>
+            <div layout-gt-xs="row">
+                <md-input-container layout-gt-xs="row">
+                    <label>真实姓名</label>
+                    <input ng-model="user.nickName" required>
+                </md-input-container>
+                <md-input-container>
+                    <label>手机号码</label>
+                    <input ng-model="user.phone" type="email" required>
+                </md-input-container>
+            </div>
+            <div layout-gt-xs="column">
+              <md-input-container>
+                <label>籍贯</label>
+                <input ng-model="user.region" required>
+              </md-input-container>
+              <md-input-container>
+                <label>学历</label>
+                <input ng-model="user.region" required>
+              </md-input-container>
+              <md-input-container>
+                <label>出生日期</label>
+                <md-datepicker ng-model="user.birthday" required></md-datepicker>
+              </md-input-container>
+              <md-textarea-container class="md-block">
+                <textarea required ng-model="answerDesc" type="text" style="width:400px;height:200px;" placeholder="自我介绍（200字内）"></textarea>
+              </md-textarea-container>
+              <div flex style="height:30px"></div>
+            </div>
+            <md-content layout="row" layout-align="center center">
+                <md-button ng-click='register()' class="md-raised md-warn">注册</md-button>
+                <md-button ng-click='back()' class="md-raised md-primary">注册咨询师</md-button>
+            </md-content>
+        </div>
+    </md-content>
+</md-content>
+
+
+    </div>
+    <br><br><br><br>
+</md-content>

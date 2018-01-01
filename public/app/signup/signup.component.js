@@ -1,17 +1,14 @@
 (function () {
     angular.module('app')
-        .component('xxQuestion', {
-            templateUrl: '/app/user/question/question.html',
+        .component('xxSignup', {
+            templateUrl: '/app/signup/signup.html',
             controller: ctrl
         });
 
     function ctrl($scope, $mdDialog) {
         $scope.status = '  ';
         $scope.customFullscreen = false;
-        $scope.user = {
-            name:'a1',
-            age:13
-       }
+
         $scope.showAlert = function (ev) {
             // Appending dialog to document.body to cover sidenav in docs app
             // Modal dialogs should fully cover application
