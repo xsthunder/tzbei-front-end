@@ -1,0 +1,65 @@
+<md-toolbar >
+    <div class="md-toolbar-tools">
+        <md-truncate >QuestionAndAnswer</md-truncate>
+        <span flex=""></span>
+        <md-button ng-href="{{homeUrl}}" target="_blank">HOME</md-button>
+    </div>
+</md-toolbar>
+
+<md-content>
+    <div layout="column" layout-align="center center">
+    	<div layout="row" layout-align="start" class="article">
+			<img src="../../../src/images/domain.jpg">
+			<div style="width:20px;"></div>
+				<div layout="column" >
+					<p class="title-domain"><b>旅行</b></p>
+					<ul>
+						<li>热门文章1</li>
+						<li>热门文章2</li>
+					</ul>
+				</div>
+    	</div>
+
+    	<div class="quesstion-button-domain">
+    		<md-button ng-click='back()' class="md-raised md-primary" style="height:50px;width:150px;font-size:1em;border-radius:10px;">我要提问</md-button>
+    	</div>
+
+    <div layout="column" >
+          <div layout="column" layout-align="center center">
+            <p><b>此领域的咨询师</b></p>
+          </div>
+      <div class="showConsultant-domain">
+      <div flex style="height:30px"></div>
+        <div layout="row" layout-sm="column" layout-xs="column" layout-align="space-around center">
+            <div style="width:45px"></div>
+            <div><img src="../../src/images/图片1.png"><p class="consultantName">Mark</p></div>
+            <div style="width:45px"></div>
+            <div><img src="../../src/images/图片2.png"><p class="consultantName">John</p></div>
+            <div style="width:45px"></div>
+            <div><img src="../../src/images/图片3.png"><p class="consultantName">Wilson</p></div>
+            <div style="width:45px"></div>
+            <div><img src="../../src/images/图片2.png"><p class="consultantName">John</p></div>
+            <div style="width:45px"></div>
+            <div><img src="../../src/images/图片3.png"><p class="consultantName">Nick</p></div>
+            <div style="width:45px"></div>
+        </div>
+        <!--空白模块-->
+        <div flex style="height:30px"></div>
+        <div layout="row" layout-sm="column" layout-xs="column" layout-align="space-around center">
+            <div style="width:45px"></div>
+            <div><img src="../../src/images/图片4.png"><p class="consultantName">Jason</p></div>
+            <div style="width:45px"></div>
+            <div><img src="../../src/images/图片5.png"><p class="consultantName">Leon</p></div>
+            <div style="width:45px"></div>
+            <div><img src="../../src/images/图片6.png"><p class="consultantName">Caren</p></div>
+            <div style="width:45px"></div>
+            <div><img src="../../src/images/图片2.png"><p class="consultantName">Kenny</p></div>
+            <div style="width:45px"></div>
+            <div><img src="../../src/images/图片3.png"><p class="consultantName">Mark</p></div>
+            <div style="width:45px"></div>
+        </div>
+        <div flex style="height:30px"></div>
+      </div>
+    </div>
+    </div>
+</md-content>

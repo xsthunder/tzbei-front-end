@@ -25,7 +25,7 @@
 
 }
 
-.showCon{
+.showConsultant{
     background-color:#EAEAEA;
     margin: 0% 5% 0% 5%;
 }
@@ -330,3 +330,44 @@
 
 }
 /*end*/
+
+/*domanin*/
+.article{
+    background-color: #EBEBEB;
+    margin: 2%;
+    width: 900px;
+
+
+}
+
+.article p.title-domain{
+    font-size: 2em;
+    margin-top:0%; 
+
+}
+
+.showConsultant-domain{
+    background-color:#EAEAEA;
+    margin: 0% 7% 7% 7%;
+}
+
+.quesstion-button-domain{  
+    letter-spacing: 10px;  
+    position: absolute;  
+    top:20%;  
+    left:45%;
+} 
+
+.quesstion-button-introduce{  
+    letter-spacing: 10px;  
+    position: absolute;  
+    top:60%;  
+    left:45%;
+} 
+
+/*固定导航栏fixed
+.md-toolbar-tools{
+    position:fixed;
+    top:0px;
+}
+*/
