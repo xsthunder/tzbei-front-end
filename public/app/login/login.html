@@ -15,16 +15,16 @@
                 <md-input-container class="md-block">
                     <!-- Use floating label instead of placeholder -->
                     <label>用户名</label>
-                    <input ng-model="username" type="text" required>
+                    <input ng-model="user.username" type="text" required>
                 </md-input-container>
                 <md-input-container class="md-block">
                     <label>密码</label>
-                    <input ng-model="password" type="password" required>
+                    <input ng-model="user.password" type="password" required>
                 </md-input-container>
             </div>
 
             <div layout="row">
-                <md-button ng-click="login()" class="md-raised" type="submit">登录</md-button>
+                <md-button ng-click="login(user)" class="md-raised" type="submit">登录</md-button>
                 <md-button ng-click="signup()" class="md-raised" type="submit">注册</md-button>
             </div>
         </form>

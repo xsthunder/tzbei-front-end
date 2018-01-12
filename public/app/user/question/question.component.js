@@ -5,13 +5,30 @@
             controller: ctrl
         });
 
-    function ctrl($scope, $mdDialog) {
+    function ctrl($scope, $mdDialog,userService,QuestionFactory) {
+        /**
+         * purpose:http post
+         */
+        $scope.postQuestion =function (body) {
+            //TODO set consultantId
+            body.userId= userService['username'];
+            function cb(err,res) {
+                console.log(err,res);
+            }
+            QuestionFactory.postQuestion(body,cb);
+        };
+        $scope.consultantList = [];
+        function getConsultantList() {
+            function cb(err,res) {
+                if(!err)$scope.consultantList = res;
+                console.log(err,res);
+            }
+            QuestionFactory.getConsultantList(cb);
+        }
+        getConsultantList();
+
         $scope.status = '  ';
         $scope.customFullscreen = false;
-        $scope.user = {
-            name:'a1',
-            age:13
-       }
         $scope.showAlert = function (ev) {
             // Appending dialog to document.body to cover sidenav in docs app
             // Modal dialogs should fully cover application

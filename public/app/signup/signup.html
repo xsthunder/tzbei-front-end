@@ -17,7 +17,7 @@
             <div layout-gt-xs="row">
                 <md-input-container>
                     <label>用户名</label>
-                    <input ng-model="user.userName" required>
+                    <input ng-model="user.username" required>
                 </md-input-container>
                 <md-input-container>
                     <label>密码</label>
@@ -27,7 +27,7 @@
             <div layout-gt-xs="row">
                 <md-input-container layout-gt-xs="row">
                     <label>真实姓名</label>
-                    <input ng-model="user.nickName" required>
+                    <input ng-model="user.realName" required>
                 </md-input-container>
                 <md-input-container>
                     <label>手机号码</label>
@@ -37,11 +37,11 @@
             <div layout-gt-xs="column">
               <md-input-container>
                 <label>籍贯</label>
-                <input ng-model="user.region" required>
+                <input ng-model="user.native" required>
               </md-input-container>
               <md-input-container>
                 <label>学历</label>
-                <input ng-model="user.region" required>
+                <input ng-model="user.education" required>
               </md-input-container>
               <md-input-container>
                 <label>出生日期</label>
@@ -53,7 +53,7 @@
               <div flex style="height:30px"></div>
             </div>
             <md-content layout="row" layout-align="center center">
-                <md-button ng-click='register()' class="md-raised md-warn">注册</md-button>
+                <md-button ng-click='register(user)' class="md-raised md-warn">注册</md-button>
                 <md-button ng-click='back()' class="md-raised md-primary">注册咨询师</md-button>
             </md-content>
         </div>
