@@ -1,16 +1,18 @@
 <md-content layout-fill >
 <div layout="column">
-  <md-content>
-    <header id="header" >
-        <div class="inner" >
-            <a href="#" class="logo" style="padding-left:10%">Qusetion&Answer</a>
-            <nav id="nav" style="padding-right:10%">
-                <a href="#/student/class">主页</a>
-                <a href="#">登录/出</a>
-                <a href="#">Elements</a>
-            </nav>
+
+    <md-toolbar id="toolbar">
+        <div class="md-toolbar-tools">
+            <md-truncate >QuestionAndAnswer</md-truncate>
+            <span flex=""></span>
+            <md-button ng-href="{{homeUrl}}" target="_blank" >提问</md-button>
+            <md-button ng-href="{{homeUrl}}" target="_blank">user</md-button>
+            <md-button ng-href="{{homeUrl}}" target="_blank">home</md-button>
+            <md-button ng-href="{{homeUrl}}" target="_blank" ng-click="login()">登录</md-button>
         </div>
-    </header>
+    </md-toolbar>
+
+    <md-content>
     <!-- Banner -->
     <section id="banner">
         <img src="../../src/images/logo白色.png">
@@ -19,7 +21,7 @@
         -->
         <p>一个为你寻找答案的地方</p>
     </section>
-  </md-content>
+    </md-content>
 
   <md-content layout-padding>
     <div layout="column">

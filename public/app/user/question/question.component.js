@@ -11,7 +11,7 @@
          */
         $scope.postQuestion =function (body) {
             //TODO set consultantId
-            body.userId= userService['username'];
+            body.userId = userService['username'];
             function cb(err,res) {
                 console.log(err,res);
             }
